@@ -8,4 +8,18 @@
  */
 
 rootProject.name = "docgen"
-include("lib")
+
+enableFeaturePreview("VERSION_CATALOGS")
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("libs.versions.toml"))
+        }
+    }
+}
+
+include("docgen")
+include("docgen-core")
+include("docgen-generator")
+include("docgen-templates")

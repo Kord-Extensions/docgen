@@ -1,0 +1,10 @@
+[versions]
+detekt = "1.17.1"  # Note: Plugin versions must be updated in the settings.gradle.kts too
+dokka = "1.4.10.2"  # Note: Plugin versions must be updated in the settings.gradle.kts too
+kotlin = "1.5.30"  # Note: Plugin versions must be updated in the settings.gradle.kts too
+
+[libraries]
+detekt = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+
+[bundles]
