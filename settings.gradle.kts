@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-include("docgen")
+include("docgen-all")
 include("docgen-core")
 include("docgen-generator")
 include("docgen-templates")
