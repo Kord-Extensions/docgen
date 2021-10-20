@@ -12,6 +12,7 @@ buildscript {
 plugins {
     `docgen-module`
     `published-module`
+    `dokka-module`
 }
 
 dependencies {
